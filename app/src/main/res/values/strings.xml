@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">MovementTracker</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="toolbar_title_map">Map</string>
+    <string name="toolbar_title_statistics">Statistics</string>
+    <string name="toolbar_title_settings">Settings</string>
+
+    <string name="fragment_settings_color_and_width_selection">Line color and width selection</string>
+    <string name="fragment_settings_interval_change">Logging time interval</string>
+    <string name="fragment_settings_interval_change_minutes">Minutes</string>
+    <string name="fragment_settings_interval_change_seconds">Seconds</string>
+    <string name="fragment_settings_line_width_hint">Enter the line width (f.e. 12,14...)</string>
+    <string name="fragment_settings_info">In this section, you can choose color and width of the line, which will appear on the map, connecting all the points. You can also choose, how often will data be logged.</string>
+    <string name="fragment_settings_interval_info">In this section, you can change, how often will the data be logged. Be careful, shorter the interval, then more battery will be consumed.</string>
+
+    <string name="fragment_map_start_tracking">Start tracking</string>
+    <string name="fragment_map_stop_tracking">Stop tracking</string>
+    <string name="fragment_map_text_coordinates">%1$s, %2$s</string>
+
+    <string name="menu_item_save">Save</string>
+
+    <string name="bottom_sheet_dialog_coordinates">Coordinates:</string>
+    <string name="bottom_sheet_dialog_accuracy">Accuracy:</string>
+    <string name="bottom_sheet_dialog_time">Time:</string>
+    <string name="bottom_sheet_dialog_source">Source:</string>
+
+    <string name="toast_tracking_running">Tracking has started.</string>
+    <string name="toast_tracking_stopped">Tracking has stopped.</string>
+    <string name="toast_tracking_not_running">Tracking is not running.</string>
+    <string name="toast_tracking_already_running">Tracking is already running.</string>
+
+    <string name="snackbar_settings_info">If you want to use movement tracking, you need to allow location in settings.</string>
+    <string name="snackbar_settings_title">SETTINGS</string>
+    <string name="snackbar_settings_empty_width">You have to enter line width</string>
+
+    <string name="dialog_settings_save_title">Save</string>
+    <string name="dialog_settings_save_message">Your preferences were successfully saved. You will see the changes in the map.</string>
+    <string name="dialog_button_ok">Ok</string>
+</resources>

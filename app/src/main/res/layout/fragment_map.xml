@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/fragment_map_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/fragment_map_map"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/fragment_map_layout_buttons"
+        android:orientation="vertical">
+    </FrameLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fragment_map_floating_button_show_points"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/fragment_map_layout_buttons"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/layout_margin"
+        android:src="@drawable/icon_show_max_points"
+        app:rippleColor="@color/colorPrimaryDark"/>
+
+    <RelativeLayout
+        android:id="@+id/fragment_map_layout_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary">
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/fragment_map_button_start_tracking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/layout_margin"
+            android:background="@drawable/background_round_gradient"
+            android:padding="@dimen/layout_padding"
+            android:text="@string/fragment_map_start_tracking"
+            android:textColor="@color/colorWhite"/>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/fragment_map_button_stop_tracking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/layout_margin"
+            android:background="@drawable/background_round_gradient"
+            android:padding="@dimen/layout_padding"
+            android:text="@string/fragment_map_stop_tracking"
+            android:textColor="@color/colorWhite"/>
+    </RelativeLayout>
+</RelativeLayout>

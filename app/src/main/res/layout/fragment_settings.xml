@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_settings_scrollview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/layout_padding"
+            android:text="@string/fragment_settings_info"
+            android:textAlignment="center"
+            android:textColor="@color/colorBlack"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:paddingBottom="@dimen/layout_half_padding"
+            android:paddingLeft="@dimen/layout_padding"
+            android:paddingRight="@dimen/layout_padding"
+            android:paddingTop="@dimen/layout_half_padding"
+            android:text="@string/fragment_settings_color_and_width_selection"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp"/>
+
+        <com.larswerkman.holocolorpicker.ColorPicker
+            android:id="@+id/fragment_settings_color_picker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_margin"
+            android:layout_gravity="center"/>
+
+        <EditText
+            android:id="@+id/fragment_settings_edit_width"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/layout_margin"
+            android:background="@drawable/drawable_background"
+            android:hint="@string/fragment_settings_line_width_hint"
+            android:inputType="number"
+            android:maxLines="1"
+            android:padding="8dp"
+            android:singleLine="true"
+            android:textSize="14sp"/>
+
+        <View
+            android:id="@+id/fragment_settings_view_line"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@color/colorBlack"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_margin"
+            android:background="@color/colorPrimary"
+            android:paddingBottom="@dimen/layout_half_padding"
+            android:paddingLeft="@dimen/layout_padding"
+            android:paddingRight="@dimen/layout_padding"
+            android:paddingTop="@dimen/layout_half_padding"
+            android:text="@string/fragment_settings_interval_change"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/layout_padding"
+            android:text="@string/fragment_settings_interval_info"
+            android:textAlignment="center"
+            android:textColor="@color/colorBlack"/>
+
+        <RadioGroup
+            android:id="@+id/fragment_settings_radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_margin"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <RadioButton
+                android:id="@+id/fragment_settings_button_minutes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="48dp"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_background"
+                android:button="@null"
+                android:checked="true"
+                android:padding="8dp"
+                android:text="@string/fragment_settings_interval_change_minutes"
+                android:textAlignment="center"
+                android:textColor="@color/radio_button_text_color"/>
+
+            <RadioButton
+                android:id="@+id/fragment_settings_button_seconds"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="48dp"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_background"
+                android:button="@null"
+                android:padding="8dp"
+                android:text="@string/fragment_settings_interval_change_seconds"
+                android:textAlignment="center"
+                android:textColor="@color/radio_button_text_color"/>
+
+        </RadioGroup>
+
+        <NumberPicker
+            android:id="@+id/fragment_settings_number_picker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"/>
+    </LinearLayout>
+</ScrollView>

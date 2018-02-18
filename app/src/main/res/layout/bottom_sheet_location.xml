@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/bottom_sheet"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_round_white"
+                android:orientation="vertical"
+                android:padding="@dimen/layout_padding"
+                app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
+
+    <TextView
+        android:id="@+id/bottom_sheet_location_text_coordinates_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/layout_margin"
+        android:text="@string/bottom_sheet_dialog_coordinates"
+        android:textColor="@color/colorBlack"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/bottom_sheet_location_text_coordinates"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/layout_margin"
+        android:layout_marginLeft="@dimen/layout_margin"
+        android:layout_marginRight="@dimen/layout_margin"
+        android:layout_toRightOf="@+id/bottom_sheet_location_text_coordinates_label"
+        android:textSize="16sp"
+        android:textColor="@color/colorBlack"
+        tools:text="-47.212, 38.265"/>
+
+    <TextView
+        android:id="@+id/bottom_sheet_location_text_accuracy_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bottom_sheet_location_text_coordinates_label"
+        android:layout_marginBottom="@dimen/layout_margin"
+        android:text="@string/bottom_sheet_dialog_accuracy"
+        android:textColor="@color/colorBlack"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/bottom_sheet_location_text_accuracy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bottom_sheet_location_text_coordinates_label"
+        android:layout_marginBottom="@dimen/layout_margin"
+        android:layout_marginLeft="@dimen/layout_margin"
+        android:layout_marginRight="@dimen/layout_margin"
+        android:layout_toRightOf="@+id/bottom_sheet_location_text_accuracy_label"
+        android:textSize="16sp"
+        android:textColor="@color/colorBlack"
+        tools:text="3.5"/>
+
+    <TextView
+        android:id="@+id/bottom_sheet_location_text_time_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bottom_sheet_location_text_accuracy_label"
+        android:layout_marginBottom="@dimen/layout_margin"
+        android:text="@string/bottom_sheet_dialog_time"
+        android:textColor="@color/colorBlack"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/bottom_sheet_location_text_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bottom_sheet_location_text_accuracy_label"
+        android:layout_marginBottom="@dimen/layout_margin"
+        android:layout_marginLeft="@dimen/layout_margin"
+        android:layout_marginRight="@dimen/layout_margin"
+        android:layout_toRightOf="@+id/bottom_sheet_location_text_time_label"
+        android:textSize="16sp"
+        android:textColor="@color/colorBlack"
+        tools:text="18.1.2025 14:23"/>
+
+    <TextView
+        android:id="@+id/bottom_sheet_location_text_source_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bottom_sheet_location_text_time_label"
+        android:layout_marginBottom="@dimen/layout_margin"
+        android:text="@string/bottom_sheet_dialog_source"
+        android:textColor="@color/colorBlack"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/bottom_sheet_location_text_source"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bottom_sheet_location_text_time_label"
+        android:layout_marginBottom="@dimen/layout_margin"
+        android:layout_marginLeft="@dimen/layout_margin"
+        android:layout_marginRight="@dimen/layout_margin"
+        android:layout_toRightOf="@+id/bottom_sheet_location_text_source_label"
+        android:textSize="16sp"
+        android:textColor="@color/colorBlack"
+        tools:text="source"/>
+
+</RelativeLayout>
